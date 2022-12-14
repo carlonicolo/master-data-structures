@@ -46,6 +46,20 @@ def reverse_linked_list():
     ll.insert_first(3)
     ll.insert_first(5)
     ll.print_list()
+    ll2 = LinkedList()
+    while not ll.is_empty():
+        ll2.insert_first(ll.delete_first())
+    ll2.print_list()
+
+
+def reverse_linked_list2():
+    ll = LinkedList()
+    ll.insert_first(30)
+    ll.insert_first(4)
+    ll.insert_first(13)
+    ll.insert_first(3)
+    ll.insert_first(5)
+    ll.print_list()
     q = Queue()
     while not ll.is_empty():
         q.enqueue(ll.delete_first())
@@ -55,7 +69,7 @@ def reverse_linked_list():
 
 
 def use_queue():
-    #q = Queue()
+    # q = Queue()
     q = QueueList()
     q.enqueue(1)
     q.enqueue(2)
