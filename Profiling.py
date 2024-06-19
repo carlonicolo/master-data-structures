@@ -1,7 +1,6 @@
 import cProfile
 from Queue import Queue
 
-
 def profile_queue(n):
     q = Queue()
     for i in range(n):
